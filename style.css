@@ -1,0 +1,546 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.home{
+    height: 650px;
+    background-color:#141414;
+    background-image: url("images/OD.jpg");
+    background-size: cover;
+    
+}
+
+/* Navigation Bar */
+.navbar{
+    width: 100%;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    background-color:#141414;
+    height: 55px;
+    z-index: 2;
+    box-shadow: inset;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+    background-color: transparent;
+    position: relative; 
+    transition: background-color 0.5s ease;
+    transition-behavior: normal;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transition-property: background-color;
+    position: fixed;
+    
+}
+
+.navCon{
+    width: 80%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.logo{
+    height: 45px;
+    width: 80px;
+    background-image: url("images/Netflix.png");
+    background-size: cover;
+}
+.logos{
+    width: 15%;
+    font-size: 1.5rem;
+    color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.movieName{
+    height: 250px;
+    width: 350px;
+    background-image: url("images/img.jpg");
+    background-size: cover;
+    mix-blend-mode: lighten;
+    position: absolute;
+    left: 60px;
+    top: 200px;
+}
+
+.Nlogo{
+    height: 70px;
+    width: 70px;
+    background-image: url("images/N.png");
+    background-size: cover;
+    position: absolute;
+    left: 70px;
+    top: 200px;
+}
+
+.movieDes{
+    height: 40px;
+    width: 460px;
+    font-size: 1rem;
+    text-align: justify;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    text-shadow: 2px 2px 4px grey, -2px -2px 4px rgb(73, 73, 73);
+    position: absolute;
+    left: 68px;
+    top: 440px;
+}
+
+.play{
+    height: 48px;
+    width: 115px;
+    color: #141414;
+    background-color: #ffffffef;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 70px;
+    top: 500px;
+
+}
+
+.moreInfo{
+    height: 48px;
+    width: 142px;
+    color: white;
+    background-color: rgba(109, 109, 110, 0.603);;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: none;
+    position: absolute;
+    left: 200px;
+    top: 500px;
+}
+.btn{
+    padding-right: 10px;
+}
+
+/* SliderPage */
+.sliderPage{
+    height: 1770px;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(20, 20, 20);
+}
+.heading{
+    color: rgb(233, 233, 233);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin-left: 50px;
+}
+
+.slideRow1{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.slideInner{
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 180px;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+
+.children1{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/OSo.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children2{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/jabwemet.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children3{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/panda.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children4{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/vincenzo.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children5{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/squidGm.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children6{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/panda.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children7{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/Lovely.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children8{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/goblin.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children9{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/ladies.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children10{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/stranger.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children11{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/ODD.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children12{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/QOT2.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children13{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/emily.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children14{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/megan.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children15{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/naruto.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children16{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/slay.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children17{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/spy.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children18{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/baki.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+.children19{
+    height: 170px;
+    width: 300px;
+    display: inline-block;
+    background-image: url("images/juju.jpeg");
+    background-size: cover;
+    border-radius: 4px;
+    transition-property:all ;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.imgs:hover{
+    height: 180px;
+    width: 320px;
+}
+
+.slideContent{
+    display: flex;
+}
+
+.next, .back{
+    height: 170px;
+    color: #dbdbdb;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    width: 70px;
+}
+
+.footTxt{
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    border-top: 2px solid gray;
+}
+
+@media (max-width:480px){
+    .home{
+        height: 200px;
+        background-color:#141414;
+        background-image: url("OD.jpg");
+        background-size: cover;
+        
+    }
+    /* Navigation Bar */
+    .navbar{
+        width: 100%;
+        line-height: 0.8;
+        display: flex;
+        align-items: center;
+        background-color:#141414;
+        height: 35px;
+        z-index: 2;
+        box-shadow: inset;
+        font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+        background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+        background-color: transparent;
+        position: relative; 
+        transition: background-color 0.5s ease;
+        transition-behavior: normal;
+        transition-duration: 0.4s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-property: background-color;
+        position: fixed;
+        
+    }
+    .navCon{
+        width: 80%;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: sans-serif;
+        color: white;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+    .logo{
+        height: 25px;
+        width: 50px;
+        background-image: url("Netflix.png");
+        background-size: cover;
+    }
+    .logos{
+        width: 15%;
+        font-size: 1rem;
+        color: white;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+.movieName{
+    height: 50px;
+    width: 70px;
+    background-image: url("img.jpg");
+    background-size: cover;
+    mix-blend-mode: lighten;
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+
+.Nlogo{
+    height: 30px;
+    width: 30px;
+    background-image: url("N.png");
+    background-size: cover;
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    visibility: hidden;
+}
+
+.movieDes{
+    height: 20px;
+    width: 120px;
+    font-size: 0.4rem;
+    text-align: justify;
+    color: white;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    text-shadow: 2px 2px 4px grey, -2px -2px 4px rgb(73, 73, 73);
+    position: absolute;
+    left: 20px;
+    top: 118px;
+}
+.play{
+    height: 15px;
+    width: 30px;
+    color: #141414;
+    background-color: #ffffffef;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.4rem;
+    position: absolute;
+    left: 20px;
+    top: 150px;
+
+}
+
+.moreInfo{
+    height: 15px;
+    width: 40px;
+    color: white;
+    background-color: rgba(109, 109, 110, 0.603);;
+    border-radius: 4px;
+    font-size: 0.3rem;
+    border: none;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+.btn{
+    padding-right: 10px;
+}
+
+    
+}
